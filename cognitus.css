@@ -1180,7 +1180,7 @@ footer {
 .rpa-info-2 {
     text-align: left;
     margin-top: 75px;
-  }
+}
 
 .banner {
     background: url(rpa-banner.png) center/cover;
@@ -1438,6 +1438,7 @@ footer {
 
 .contact-us-form {
     width: 1400px;
+    /* max-width: 600px; */
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     margin-left: 65px;
     padding-top: 20px;
@@ -1623,6 +1624,7 @@ footer {
         width: 300px;
         z-index: 999;
         transition: right 0.3s;
+        overflow-y: auto;
     }
 
     .sidebar-menu.active {
@@ -1713,4 +1715,439 @@ footer {
           display: none;
         }
       }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .about-us-html {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-container-aboutus,
+    .right-content-aboutus {
+        flex: 1; /* Take full width in smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .our-services {
+        padding: 50px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .service-item {
+        max-width: calc(50% - 20px); /* Two items per row for smaller screens */
+        padding-left: 20px; /* Reduce padding for smaller screens */
+        padding-right: 20px; /* Reduce padding for smaller screens */
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-us-grid1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-container-grid1,
+    .right-content-grid1 {
+        flex: 1; /* Take full width in smaller screens */
+        order: 0;
+    }
+
+    .right-content-grid1 {
+        padding-left: 20px;
+        padding-right: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .about-us-grid2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-container-grid2,
+    .right-content-grid2 {
+        flex: 1; /* Take full width in smaller screens */
+    }
+
+    .right-content-grid2 {
+        padding-left: 20px;
+        padding-right: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column-footer {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .learn-more-button-3 {
+        margin: 0 auto; /* Center the button */
+        margin-bottom: 20px;
+    }
+
+    .product-list {
+        text-align: left;
+    }
+
+    .slider {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* white-space: nowrap; */
+        /* overflow: hidden; */
+    }
+
+    .logos {
+        display: flex;
+        width: auto;
+        /* padding: 0 10px; */
+        animation: slidein 3s linear infinite;
+    }
+
+    .img {
+        width: 80px; /* Adjust the width as needed for smaller screens */
+        height: 80px; /* Adjust the height as needed for smaller screens */
+        padding: 10px; /* Adjust the padding as needed for smaller screens */
+    }
+
+    .banner-6 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .contact-info-contactus {
+        flex-direction: column; /* Stack contact items on smaller screens */
+        align-items: center;
+    }
+
+    .contact-item {
+        margin: 10px; /* Adjust spacing between contact items on smaller screens */
+    }
+
+    .contact-item img {
+        width: 60px; /* Adjust the size of the icon for even smaller screens */
+    }
+
+    .contact-us-form {
+        width: 500px;
+        /* margin-left: 0;
+        margin-right: 0;
+        display: grid;
+        align-items: center;
+        justify-content: space-around; */
+    }
+
+    .contact-form-2 {
+        width: 500px;
+        /* margin-right: 0; */
+        max-width: 500px;
+        /* margin-left: 0; */
+        display: inline-grid;
+        padding: auto;
+        margin: auto;
+    }
+
+    /* .contact-form-2 label {
+        display: inline;
+        padding: auto;
+        margin: auto;
+    } */
+
+    .contact-form-2 label {
+        display: inline;
+        white-space: nowrap;
+    }
+
+    .contact-form-2 input {
+        width: 320%;
+    }
+
+    .form-row-2 {
+        display: contents;
+        width: 500px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #message-2 {
+        width: 100%;
+        resize: vertical;
+    }
+
+    .submit-button {
+        text-align: center;
+    }
+
+    .rpa-contents {
+        padding: 50px; /* Adjust padding for smaller screens */
+    }
+
+    .rpa-contents {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo-container-2 {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center; /* Center-align images on smaller screens */
+    }
+
+    .logo-container-2 img {
+        width: 100%; /* Make images take 100% width on smaller screens */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
+    #message-box {
+        padding: 10px; /* Adjusted padding for smaller screens */
+        height: auto; /* Allow the height to adjust based on content */
+        width: 100%;
+    }
+
+    .main-heading {
+        padding: 15px;
+    }
+
+    .small-heading p {
+        padding-top: 50px;
+    }
+
+    .small-heading h1 {
+        font-size: 40px;
+    }
+
+    .learn-more-button {
+        width: 150px;
+        height: 48px;
+        max-width: 230px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .learn-more-button a {
+        font-size: 14px;
+    }
+
+    .inner-column img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .inner-column h2 {
+        font-size: 16px;
+    }
+
+    .inner-column p {
+        font-size: 12px;
+    }
+
+    .decorative-heading {
+        font-size: 24px;
+    }
+
+    .decorative-heading::before,
+    .decorative-heading::after {
+        width: 40px;
+        height: 4px;
+    }
+
+    .wrapper {
+        padding-left: 10px;
+        padding-bottom: 80px;
+    }
+
+    .wrapper i {
+        height: 40px;
+        width: 40px;
+        font-size: 1rem;
+        line-height: 40px;
+    }
+
+    .carousel .card {
+        height: 500px;
+    }
+
+    .carousel .card .img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .card .img img {
+        object-fit: contain;
+        object-position: center;
+        width: fit-content;
+    }
+
+    .carousel .card h2 {
+        padding: 8px;
+        font-size: 16px; /* Adjust the font size as needed */
+    }
+
+    .carousel .card p {
+        padding: 8px;
+        font-size: 12px; /* Adjust the font size as needed */
+    }
+
+    .right-content {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .about-us .right-content {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about-us .right-content h2 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+
+    .about-us .right-content .title {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: auto;
+        /* margin-right: 0; */
+        max-width: 500px;
+        /* margin-left: 0; */
+        display: inline-grid;
+        padding: auto;
+        margin: auto;
+    }
+
+    /* .contact-form-2 label {
+        display: inline;
+        padding: auto;
+        margin: auto;
+    } */
+
+    .contact-section {
+        height: auto;
+    }
+
+    .contact-form label {
+        display: inline;
+        white-space: nowrap;
+    }
+
+    .contact-form input {
+        width: 320%;
+    }
+
+    .form-row {
+        display: contents;
+        width: 500px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #message {
+        width: 100%;
+        resize: vertical;
+    }
+
+    .logo-container {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center; /* Center-align images */
+    }
+
+    .logo-container img{
+        width: auto;
+        height: auto;
+    }
+}
+
+/* Media query for extra small screens */
+@media screen and (max-width: 480px) {
+    .service-item {
+        max-width: 100%; /* Single item per row for extra small screens */
+    }
+
+    .rpa-contents {
+        padding: 30px; /* Adjust padding for very small screens */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .inner-column {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .inner-column .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .decorative-heading {
+        font-size: 32px;
+    }
+
+    .decorative-heading::before,
+    .decorative-heading::after {
+        width: 50px;
+        height: 4px;
+    }
+
+    .wrapper {
+        padding-left: 20px;
+        padding-bottom: 120px;
+    }
+
+    .wrapper i:first-child {
+        left: 10px;
+    }
+
+    .wrapper i:last-child {
+        right: -2px;
+    }
+
+    .carousel .card h2 {
+        padding: 10px;
+        font-size: 18px; /* Adjust the font size as needed */
+    }
+
+    .carousel .card p {
+        padding: 10px;
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-us {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-container-1,
+    .right-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us .right-content h2 {
+        font-size: 32px;
+    }
+
+    .about-us .right-content p {
+        margin-right: 0;
+    }
 }
