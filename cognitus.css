@@ -1759,7 +1759,7 @@ footer {
     }
 
     .about-us-grid2 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: auto;
     }
 
